@@ -1,0 +1,79 @@
+# get rid of default keybindings
+unmapAll
+
+# navigation
+map <a-j> scrollDown
+map <a-k> scrollUp
+map <Space>gg scrollToTop
+map <Space>gG scrollToBottom
+map <Space>G scrollToBottom
+map <a-h> scrollLeft
+map <a-l> scrollRight
+
+map <Space>r reload
+map <Space>yy copyCurrentUrl
+map <Space>p openCopiedUrlInCurrentTab
+map <Space>P openCopiedUrlInNewTab
+
+map <Space>i enterInsertMode
+map <Space>v enterVisualMode
+
+map <Space>gi focusInput
+
+map <Space>f LinkHints.activateMode
+map <Space>F LinkHints.activateModeToOpenInNewTab
+#LinkHints.activateModeToOpenInNewForegroundTab
+# not sure what these do?
+#nextFrame
+#mainFrame
+
+# vomnibar
+map <Space>o Vomnibar.activate
+map <Space>O Vomnibar.activateInNewTab
+map <Space>b Vomnibar.activateBookmarks
+map <Space>B Vomnibar.activateBookmarksInNewTab
+map <Space>T Vomnibar.activateTabSelection
+
+# Find
+map <Space>/ enterFindMode
+map <Space>n performFind
+map <Space>N performBackwardsFind
+
+# Navigating history
+map <Space>H goBack
+map <a-H> goBack
+
+map <Space>L goForward
+map <a-L> goForward
+
+# Manipulating tabs
+## with space
+map <Space>tt createTab
+
+map <a-J> previousTab
+map <Space>J previousTab
+map <Space>tj previousTab
+
+map <a-K> nextTab
+map <Space>K nextTab
+map <Space>tk nextTab
+
+map <a-s> visitPreviousTab
+map <Space>s visitPreviousTab
+map <Space>ts visitPreviousTab
+
+## not sure how to bind
+map <Space>t0 firstTab
+map <Space>t$ lastTab
+map <Space>tp togglePinTab
+map <Space>tx removeTab
+map <Space>x removeTab
+map <Space>tX restoreTab
+map <Space>X restoreTab
+
+# Miscellaneous
+map <Space>? showHelp
+
+## set lowercase marks as global marks
+map <Space>` Marks.activateGotoMode swap
+map <Space>m Marks.activateCreateMode swap
